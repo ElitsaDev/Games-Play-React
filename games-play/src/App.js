@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import * as gameService from "./services/gameService";
 import Catalog from "./components/Catalog/Catalog";
 import Create from "./components/CreateGame/Create";
@@ -16,37 +17,29 @@ function App() {
       .then(result => setGames(result))
   }, []);
 
-  
-
   return (
     <div className="App">
 
       <div id="box">
         <Header />
-        {/* <!-- Main Content --> */}
+       
         <main id="main-content">
-          <Home />
-          <Login />
-          <Register />
-          <Create />
-          <Catalog />
-
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login/>} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/create-game" element={<Create />} />
+              <Route path="/catalog" element={<Catalog />} />
+          </Routes>
         </main>
         <Footer />
       </div>
 
-
-
-
-      {/* <!--Home Page--> */}
-
       {/* <!-- Login Page ( Only for Guest users ) --> */}
-
       {/* <!-- Register Page ( Only for Guest users ) --> */}
       {/* <!-- Create Page ( Only for logged-in users ) --> */}
-
       {/* <!-- Edit Page ( Only for the creator )--> */}
-
+    
       {/* <!--Details Page--> */}
       <section id="game-details">
         <h1>Game Details</h1>
@@ -100,9 +93,6 @@ function App() {
         </article>
 
       </section>
-
-      {/* <!-- Catalogue --> */}
-
     </div>
   );
 }

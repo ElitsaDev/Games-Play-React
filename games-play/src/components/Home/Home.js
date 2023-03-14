@@ -21,7 +21,7 @@ export default function Home(){
               <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
             <div className="data-buttons">
-              <a href="#" class="btn details-btn">Details</a>
+              <a href="#" className="btn details-btn">Details</a>
             </div>
           </div>
           <div className="game">
@@ -33,7 +33,7 @@ export default function Home(){
               <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
             <div className="data-buttons">
-              <a href="#" class="btn details-btn">Details</a>
+              <a href="#" className="btn details-btn">Details</a>
             </div>
           </div>
           <div className="game">
@@ -45,7 +45,7 @@ export default function Home(){
               <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
             <div className="data-buttons">
-              <a href="#" class="btn details-btn">Details</a>
+              <a href="#" className="btn details-btn">Details</a>
             </div>
           </div>
 
